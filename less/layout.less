@@ -1,0 +1,30 @@
+// less/layout.less
+
+body {
+    margin: 0;
+    font-family: @font-base;
+    background-color: @bg-color;
+    color: @text-color;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: @spacing-lg @spacing-md;
+  }
+  
+  /* Exemplo: função do LESS (darken/lighten) */
+  header {
+    background: @primary-color;
+    color: #fff;
+    padding: @spacing-md;
+  
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+  
+    /* função do LESS */
+    border-bottom: 4px solid darken(@primary-color, 10%);
+  }
+  

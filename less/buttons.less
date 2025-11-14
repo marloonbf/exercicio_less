@@ -1,0 +1,26 @@
+// less/buttons.less
+
+.btn {
+    display: inline-block;
+    padding: @spacing-sm @spacing-md;
+    border-radius: @border-radius;
+    border: none;
+    cursor: pointer;
+    background-color: @colors[primary];  // usando o mapa
+    color: #fff;
+    font-family: @font-base;
+    transition: background 0.2s ease;
+  
+    &:hover {
+      background-color: lighten(@colors[primary], 5%); // função LESS
+    }
+  
+    &--secondary {
+      background-color: @colors[secondary];
+  
+      &:hover {
+        background-color: lighten(@colors[secondary], 5%);
+      }
+    }
+  }
+  
